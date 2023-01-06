@@ -1,0 +1,44 @@
+#nav {
+  background-color: rgb(254, 252, 243);
+  height: 100px;
+}
+
+#hero {
+  background-color: rgb(254, 252, 243);
+  height: 500px;
+}
+
+#contact {
+  background-color: rgb(240, 219, 219);
+}
+
+#footer {
+  background-color: rgba(219, 163, 154, 0.8);
+}
+
+header {
+  position: absolute;
+  right: 0;
+}
+
+.hero-message {
+  margin: auto;
+}
+
+.nav-bar {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar li {
+  margin-left: 3rem;
+
+  /* margin-right: 2rem; */
+}
+
+.nav-bar li:first-child {
+  border: 1px black solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
