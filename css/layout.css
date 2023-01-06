@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-two-third {
+  width: 66%;
+}
+
+.column-one-third {
+  width: calc(100% / 3);
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
