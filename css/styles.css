@@ -15,7 +15,7 @@ li {
 }
 
 #about {
-  height: 500px;
+  height: 300px;
 }
 
 #hero {
@@ -25,10 +25,7 @@ li {
 
 #contact {
   background-color: rgb(240, 219, 219);
-}
-
-#footer {
-  background-color: rgba(219, 163, 154, 0.8);
+  margin-top: 50px;
 }
 
 header {
@@ -68,12 +65,19 @@ header {
 /* about */
 .profile {
   width: 200px;
+  height: 200px;
+  margin: 0 100px 0 50px;
+  border: 1px #fff solid;
+  border-radius: 50%;
 }
 
 .profile img {
   width: 100%;
+  border-radius: 50%;
+}
 
-  /* border-radius: 50%; */
+.about-me {
+  padding: 50px 0 100px 100px;
 }
 
 /* project */
@@ -94,7 +98,24 @@ button:hover {
   background-position: left;
 }
 
+.project-intro {
+  margin: auto 0;
+}
+
+.project-image {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.button-container {
+  padding-left: 0;
+}
+
 /* contact */
+.center {
+  margin-left: calc(100% / 3);
+}
+
 #contact span {
   display: inline-block;
   margin-right: 30px;
@@ -102,10 +123,17 @@ button:hover {
 
 .contact-linkedin {
   font-size: 2rem;
-  color: rgb(11, 101, 194);
+  color: #5f5f5f;
 }
 
 .contact-github {
   font-size: 2rem;
-  color: black;
+  color: #5f5f5f;
+}
+
+/* footer */
+.footer {
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
