@@ -3,21 +3,33 @@
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
+
+  /* border: 3px red solid; */
 }
 
 .row {
   display: flex;
+  padding-right: 150px;
+  padding-left: 150px;
+
+  /* border: 1px springgreen solid; */
 }
 
 .column-two-third {
   width: 66%;
+
+  /* border: 1px black solid; */
 }
 
 .column-one-third {
   width: calc(100% / 3);
+
+  /* border: 1px rgb(28, 17, 182) solid; */
 }
 
 img {
-  width: 100px;
-  height: 150px;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }

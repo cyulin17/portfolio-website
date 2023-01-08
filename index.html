@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChiaYu Lin</title>
   <link rel="icon" href="images/favicon.ico">
+  <script src="https://kit.fontawesome.com/fe5279fe89.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Jua&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -27,12 +31,12 @@
   </section>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero  -->
     <section id="hero">
       <div class="container row">
         <div class="hero-message">
-          <p>HELLO! I'am ChiaYu Lin.</p>
-          <p>I am a Full Stack Engineer</p>
+          <p>Hi! My name is ChiaYu Lin.</p>
+          <p>I am a Full Stack Engineer.</p>
         </div>
       </div>
     </section>
@@ -40,14 +44,14 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <h2>ABOUT</h2>
+          <h1>ABOUT</h1>
         </div>
         <div class="row">
-          <div class="column-two-third">
-            <p>HelloWorld</p>
+          <div class="column-two-third about-me">
+            <p>Hello World</p>
           </div>
-          <div class="column-one-third">
-            <img src="./images/profile-picture.JPG" alt="">
+          <div class="column-one-third profile">
+            <img src="./images/profile-picture.png" alt="">
           </div>
         </div>
       </div>
@@ -56,53 +60,51 @@
     <section id="projects">
       <div class="container">
         <div class="row">
-          <h2>PROJECTS</h2>
+          <h1>PROJECTS</h1>
         </div>
         <div class="row">
-          <div class="column-two-third">
-            <img src="" alt="boba-finder">
+          <div class="column-two-third project-image">
+            <a href="https://cyulin17.github.io/boba-finder/"><img src="./images/boba-finder-cover.jpg" alt="boba-finder"></a>
           </div>
-          <div class="column-one-third">
-            <h2>Boba Finder</h2>
-            <p>Find the boba tea near you</p>
-            <div class="row">
-              <button>LIVE</button>
-              <button>GitHUB</button>
+          <div class="column-one-third project-intro">
+            <h3>Boba Finder</h3>
+            <p>Find the boba tea near you.</p>
+            <div class="row button-container">
+              <button onclick="location.href='https://cyulin17.github.io/boba-finder/'" type="button">LIVE</button>
+              <button onclick="location.href='https://github.com/cyulin17/boba-finder'" type="button">GitHUB</button>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="column-two-third">
-            <img src="" alt="go-to-japan">
+          <div class="column-two-third project-image">
+            <a href="https://go-to-japan.chiayulin.com/"><img src="./images/go-to-japan-cover.jpeg" alt="go-to-japan"></a>
           </div>
-          <div class="column-one-third">
-            <h2>Go TO JAPAN</h2>
+          <div class="column-one-third project-intro">
+            <h3>Go TO JAPAN</h3>
             <p>Plan your itineray in Japan</p>
-            <div class="row">
-              <button>LIVE</button>
-              <button>GitHUB</button>
+            <div class="row button-container">
+              <button onclick="window.location.href='https://go-to-japan.chiayulin.com/'" type="button">LIVE</button>
+              <button onclick="window.location.href='https://github.com/cyulin17/go-to-japan'" type="button">GitHUB</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Contact -->
+    <!-- Contact and footer -->
     <section id="contact">
       <div class="container">
-        <div class="row">
-          <h2>LET'S CONNECT</h2>
+        <div class="row center">
+          <h1>LET'S CONNECT</h1>
         </div>
-        <div class="row">
-          <span>LinkedIn</span><span>GitHUB</span>
+        <div class="row center">
+          <span><a href="https://www.linkedin.com/in/chiayu-lin17/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin contact-linkedin"></i></a></span>
+          <span><a href="https://github.com/cyulin17" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github contact-github"></i></a></span>
         </div>
-    </section>
-    <!-- footer -->
-    <section id="footer">
-      <footer class="container">
-        <div class="row">
-          <p>2023 ChiaYu Lin</p>
-        </div>
-      </footer>
+        <footer class="container center">
+          <div class="row footer">
+            <div><i class="fa-regular fa-copyright"></i>&nbsp; 2023 ChiaYu Lin</div>
+          </div>
+        </footer>
     </section>
   </main>
 
