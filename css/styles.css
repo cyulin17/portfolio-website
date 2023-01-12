@@ -4,7 +4,19 @@ html {
 
 body {
   font-family: Jua, sans-serif;
-  color: #5f5f5f;
+  color: #171010;
+}
+
+@keyframes right {
+  100% {
+    transform: translate(40%, 0);
+  }
+}
+
+@keyframes left {
+  100% {
+    transform: translate(-25%, 0);
+  }
 }
 
 a,
@@ -55,11 +67,14 @@ header {
   position: absolute;
   right: 300px;
   top: 8px;
+  animation: left 2s forwards;
 }
 
 .hero-message {
+  position: absolute;
   width: 650px;
   margin: 35vh auto;
+  animation: right 2s forwards;
 }
 
 .hero-message p {
@@ -102,6 +117,12 @@ header {
   padding: 50px 0 100px 100px;
 }
 
+.about-me p {
+  font-size: 1.5rem;
+
+  /* line-height: 2px; */
+}
+
 .self-intro {
   margin-top: 10vh;
 }
@@ -113,6 +134,18 @@ header {
   line-height: 50px;
   text-align: center;
   border-radius: 30px;
+}
+
+.learn-more p {
+  font-size: 1rem;
+}
+
+.learn-more:hover span {
+  display: none;
+}
+
+.learn-more a p:hover::after {
+  content: "RESUME";
 }
 
 /* project */
