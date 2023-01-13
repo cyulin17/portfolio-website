@@ -1,3 +1,6 @@
-# ajax-project
+# portfolio
 
-A dynamic HTML, CSS, and JavaScript solo project.
+A portfolio website showcase my experiences and work.
+
+https://cyulin17.github.io/portfolio-website/
+
