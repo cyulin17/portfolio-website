@@ -7,6 +7,10 @@ body {
   color: #171010;
 }
 
+main {
+  overflow: hidden;
+}
+
 @keyframes right {
   100% {
     transform: translate(25%, 0);
@@ -44,7 +48,7 @@ li {
   left: 0;
   background-color: rgb(254, 252, 243);
   height: 70px;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 
@@ -53,9 +57,8 @@ li {
 }
 
 .hero-name {
-  /* display: inline-block; */
   font-family: Jua, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3vw;
 }
 
 #about {
@@ -63,10 +66,14 @@ li {
   height: 100vh;
 }
 
+#about .row {
+  margin-bottom: 50px;
+}
+
 #hero {
-  background-color: rgb(235, 193, 193);
+  background-color: rgb(254, 252, 243);
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 #contact {
@@ -90,41 +97,23 @@ section {
   height: 40px;
 }
 
-/* header {
-  position: fixed;
-  right: 300px;
-
-  /* right: 300px;
-  top: 8px;
-  animation: left 2s forwards;  */
-
-/* } */
-
 .hero-message {
   position: absolute;
-  top: 45%;
+  top: 35%;
+  right: 50%;
   animation: right 2s forwards;
-  margin: 0 auto;
 }
 
 .hero-message p {
-  /* position: absolute; */
-
-  /* margin: -15px; */
-
-  /* padding: 0; */
-
-  /* font-size: 2vw; */
-
-  /* margin-top: 5px;
-  margin-bottom: 5px; */
-
-  /* margin: 35vh auto; */
+  font-size: 2vw;
   animation: right 2s forwards;
 }
 
 .nav-bar {
+  position: absolute;
+  right: 10%;
   display: flex;
+  animation: left 2s forwards;
 }
 
 .nav-bar li {
@@ -134,14 +123,12 @@ section {
 .stack {
   display: flex;
   padding: 0;
-
-  /* margin-left: 0; */
 }
 
 .stack li {
   padding: 0;
   margin: 0 3px;
-  width: 75px;
+  width: 80px;
   height: 20px;
   line-height: 20px;
   text-align: center;
@@ -161,7 +148,7 @@ section {
   height: 280px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 11vh;
+  margin-top: 3vh;
   border: 1px #fff solid;
   border-radius: 50%;
 }
@@ -172,23 +159,20 @@ section {
 }
 
 .about-me {
-  padding-left: 250px;
-  padding-right: 250px;
+  width: 25vw;
+  font-size: 1vw;
+  margin-left: 35%;
 }
 
 .about-me p {
   font-size: 1.5rem;
 }
 
-/* .self-intro {
-  margin-top: 20vh;
-} */
-
 .learn-more {
   background-color: rgb(240, 219, 219);
   width: 120px;
   height: 50px;
-  margin-left: 250px;
+  margin-left: 35%;
   line-height: 50px;
   text-align: center;
   border-radius: 30px;
@@ -229,21 +213,13 @@ button:hover {
 
 .project-intro {
   margin: auto 0;
-}
-
-.project-image {
-  padding-top: 5px;
-  padding-bottom: 10px;
-
-  /* margin: 0 auto; */
+  margin-left: -12%;
 }
 
 .project-image img {
   display: block;
-  width: 60%;
-
-  /* padding: 5px ; */
-  margin: 0 auto;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .button-container {
@@ -253,7 +229,7 @@ button:hover {
 
 /* contact */
 .center {
-  margin-left: calc(100% / 3);
+  margin-left: 42.5%;
 }
 
 #contact span {
@@ -273,8 +249,5 @@ button:hover {
   width: 500px;
   color: rgb(254, 252, 243);
   margin-top: 20px;
-  margin-left: 15px;
   padding-bottom: 10px;
 }
-
-/* mobile */
