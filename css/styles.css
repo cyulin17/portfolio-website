@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  /* font-family: 'Jua', sans-serif; */
   font-family: Mandali, sans-serif;
   color: #171010;
 }
@@ -46,6 +45,7 @@ li {
   background-color: rgb(254, 252, 243);
   height: 70px;
   width: 100%;
+  z-index: 10;
 }
 
 .nav-bar li a:hover {
@@ -53,6 +53,7 @@ li {
 }
 
 .hero-name {
+  /* display: inline-block; */
   font-family: Jua, sans-serif;
   font-size: 3.5rem;
 }
@@ -63,21 +64,19 @@ li {
 }
 
 #hero {
-  /* background-color: rgb(254, 252, 243); */
-
-  /* position: relative; */
-
-  /* top: 70px; */
   background-color: rgb(235, 193, 193);
   height: 100vh;
-
-  /* height: 500px; */
   width: 100%;
 }
 
 #contact {
   background-color: rgb(240, 219, 219);
   margin-top: 100px;
+}
+
+section {
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 /* projects */
@@ -91,23 +90,21 @@ li {
   height: 40px;
 }
 
-header {
+/* header {
   position: fixed;
   right: 300px;
 
   /* right: 300px;
   top: 8px;
   animation: left 2s forwards;  */
-}
+
+/* } */
 
 .hero-message {
-  /* margin: 0 auto; */
-
-  /* background-color: #fff; */
-  width: 700px;
-  height: 500px;
-
-  /* width: 650px; */
+  position: absolute;
+  top: 45%;
+  animation: right 2s forwards;
+  margin: 0 auto;
 }
 
 .hero-message p {
@@ -116,16 +113,14 @@ header {
   /* margin: -15px; */
 
   /* padding: 0; */
-  font-size: 2vw;
+
+  /* font-size: 2vw; */
 
   /* margin-top: 5px;
   margin-bottom: 5px; */
-  margin: 35vh auto;
-  animation: right 2s forwards;
-}
 
-#hero .container {
-  position: relative;
+  /* margin: 35vh auto; */
+  animation: right 2s forwards;
 }
 
 .nav-bar {
@@ -239,6 +234,16 @@ button:hover {
 .project-image {
   padding-top: 5px;
   padding-bottom: 10px;
+
+  /* margin: 0 auto; */
+}
+
+.project-image img {
+  display: block;
+  width: 60%;
+
+  /* padding: 5px ; */
+  margin: 0 auto;
 }
 
 .button-container {
