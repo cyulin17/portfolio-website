@@ -24,8 +24,7 @@ main {
 }
 
 a,
-button,
-li {
+button {
   cursor: pointer;
 }
 
@@ -118,6 +117,7 @@ section {
 
 .nav-bar li {
   margin-left: 3rem;
+  cursor: pointer;
 }
 
 .stack {
