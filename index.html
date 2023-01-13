@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
   <script src="https://kit.fontawesome.com/fe5279fe89.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Jua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Mandali&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
+
 <body>
   <!-- nav bar section -->
   <section id="nav">
@@ -33,32 +35,48 @@
   <main>
     <!-- Hero  -->
     <section id="hero">
-      <div class="container row">
-        <div class="hero-message">
-          <p>Hi! My name is ChiaYu Lin.</p>
-          <p>I am a Web Developer.</p>
+      <div class="container">
+        <div class="row">
+          <div class="hero-message">
+            <p>Hi! My name is <span class="hero-name">ChiaYu Lin</span>.<br>I am a Web Developer.</p>
+          </div>
         </div>
+        <!-- <div class="hero-message">
+          <p>Hi! My name is <span class="hero-name">ChiaYu Lin</span>.</p>
+          <p>I am a Web Developer.</p>
+        </div> -->
       </div>
     </section>
     <!-- about -->
     <section id="about">
       <div class="container">
-        <div class="row">
+        <div class="row large-font">
           <h1>ABOUT ME</h1>
         </div>
-        <div class="row self-intro">
-          <div class="column-two-third about-me">
-            <p>Hi, There! I'm ChiaYu, a Web Developer based in Southern California. I love learning both human and computer
-            languages. I speak Mandarin, English, and Japanese. I know JavaScript, React, HTML, CSS, and more! I like traveling,
-            foodie and Disney.</p>
-            <div class="learn-more">
-              <a href="https://drive.google.com/file/d/1SU07D9hEi51JY9B78we4IBUtpZglGyZH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <p><span>LEARN MORE</span></p>
-              </a>
-            </div>
-          </div>
-          <div class="column-one-third profile">
+        <div class="row">
+          <div class="profile">
             <img src="./images/profile-picture.png" alt="">
+          </div>
+        </div>
+        <!-- <div class="column-two-third about-me"> -->
+        <!-- <div class="row about-me"> -->
+        <div class="row">
+          <div class="about-me">
+            <p>Hi, There! I'm ChiaYu, a Web Developer based in Southern California. I love learning both human and
+              computer
+              languages. I speak Mandarin, English, and Japanese. I know JavaScript, React, HTML, CSS, and more! I like
+              traveling,
+              foodie and Disney.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="learn-more"> -->
+        <div class="row">
+          <div class="learn-more">
+            <a href="https://drive.google.com/file/d/1SU07D9hEi51JY9B78we4IBUtpZglGyZH/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer">
+              <p><span>LEARN MORE</span></p>
+            </a>
           </div>
         </div>
       </div>
@@ -66,35 +84,65 @@
     <!-- Projects -->
     <section id="projects">
       <div class="container">
-        <div class="row">
+        <div class="row large-font">
           <h1>PROJECTS</h1>
         </div>
         <div class="row">
-          <div class="column-two-third project-image">
-            <a href="https://cyulin17.github.io/boba-finder/"><img src="./images/boba-finder-cover.jpg" alt="boba-finder"></a>
+          <div class="column-two-third">
+            <div class="project-image">
+              <a href="https://cyulin17.github.io/boba-finder/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/boba-finder-cover.jpg" alt="boba-finder">
+              </a>
+            </div>
           </div>
           <div class="column-one-third project-intro">
             <h3>Boba Finder</h3>
-            <p>Boba-finder helps users to locate a nearby boba tea shop using a zip code. It integrated Google Map APIs to provide
-            users with the latest store information, photos, and reviews.</p>
+            <p>Boba-finder helps users to locate a nearby boba tea shop using a zip code. It integrated Google Map APIs
+              to provide
+              users with the latest store information, photos, and reviews.
+            </p>
+            <ul class="stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>AJAX</li>
+            </ul>
             <div class="row button-container">
-              <button onclick="window.open('https://cyulin17.github.io/boba-finder/','_blank')" type="button">LIVE</button>
-              <button onclick="window.open('https://github.com/cyulin17/boba-finder', '_blank')" type="button">GitHUB</button>
+              <button onclick="window.open('https://cyulin17.github.io/boba-finder/','_blank')"
+                type="button">LIVE</button>
+              <button onclick="window.open('https://github.com/cyulin17/boba-finder', '_blank')"
+                type="button">GitHUB</button>
             </div>
+
           </div>
         </div>
         <div class="row line"></div>
         <div class="row">
-          <div class="column-two-third project-image">
-            <a href="https://go-to-japan.chiayulin.com/"><img src="./images/go-to-japan-cover.jpeg" alt="go-to-japan"></a>
+          <div class="column-two-third">
+            <div class="project-image">
+              <a href="https://go-to-japan.chiayulin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/go-to-japan-cover.jpeg" alt="go-to-japan">
+              </a>
+            </div>
           </div>
           <div class="column-one-third project-intro">
             <h3>Go TO JAPAN</h3>
-            <p>Go-to-japan is a travel itinerary planner for travelers who want to plan their trip to Japan. Users can search based on
-            area, category, or keywords to find their destinations or activities and add or edit their itinerary from a dynamic map.</p>
+            <p>Go-to-japan is a travel itinerary planner for travelers who want to plan their trip to Japan. Users can
+              search based on
+              area, category, or keywords to find their destinations or activities and add or edit their itinerary from
+              a dynamic map.
+            </p>
+            <ul class="stack stack-tag">
+              <li>React.js</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+            </ul>
             <div class="row button-container">
               <button onclick="window.open('https://go-to-japan.chiayulin.com/', '_blank')" type="button">LIVE</button>
-              <button onclick="window.open('https://github.com/cyulin17/go-to-japan', '_blank') " type="button">GitHUB</button>
+              <button onclick="window.open('https://github.com/cyulin17/go-to-japan', '_blank') "
+                type="button">GitHUB</button>
             </div>
           </div>
         </div>
@@ -107,9 +155,12 @@
           <h1>LET'S CONNECT</h1>
         </div>
         <div class="row center">
-          <span class="contact-info"><a href="https://www.linkedin.com/in/chiayu-lin17/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin contact-linkedin"></i></a></span>
-          <span class="contact-info"><a href="https://github.com/cyulin17" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github contact-github"></i></a></span>
-          <span class="contact-info"><a href="mailto:lin.1008@osu.edu" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope contact-email"></i></a></span>
+          <span class="contact-info"><a href="https://www.linkedin.com/in/chiayu-lin17/" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin contact-linkedin"></i></a></span>
+          <span class="contact-info"><a href="https://github.com/cyulin17" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-github contact-github"></i></a></span>
+          <span class="contact-info"><a href="mailto:lin.1008@osu.edu" target="_blank" rel="noopener noreferrer"><i
+                class="fa-solid fa-envelope contact-email"></i></a></span>
         </div>
         <footer class="container center">
           <div class="row footer">
@@ -123,4 +174,5 @@
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

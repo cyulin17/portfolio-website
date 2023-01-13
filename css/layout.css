@@ -18,11 +18,15 @@
 .column-two-third {
   width: 66%;
 
+  /* font-family: 'Mandali', sans-serif; */
+
   /* border: 1px black solid; */
 }
 
 .column-one-third {
   width: calc(100% / 3);
+
+  /* font-family: 'Mandali', sans-serif; */
 
   /* border: 1px rgb(28, 17, 182) solid; */
 }
@@ -32,4 +36,43 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin: auto 0;
+  }
+
+  .row {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .column-one-third {
+    width: 100%;
+  }
+
+  .column-two-third {
+    width: 100%;
+  }
+
+  .about-me {
+    padding: 0;
+  }
+
+  .learn-more {
+    margin: 0;
+  }
+
+  .hero-message {
+    /* animation: none; */
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* #hero {
+    width: 100vw;
+  } */
 }
