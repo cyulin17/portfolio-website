@@ -3,13 +3,17 @@ html {
 }
 
 body {
-  font-family: Jua, sans-serif;
+  font-family: Mandali, sans-serif;
   color: #171010;
+}
+
+main {
+  overflow: hidden;
 }
 
 @keyframes right {
   100% {
-    transform: translate(40%, 0);
+    transform: translate(25%, 0);
   }
 }
 
@@ -27,14 +31,34 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #171010;
+}
+
+li {
+  list-style: none;
+}
+
+.large-font {
+  font-size: 1.3rem;
 }
 
 #nav {
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: rgb(254, 252, 243);
   height: 70px;
-  width: 100%;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav-bar li a:hover {
+  color: rgb(219, 163, 154);
+}
+
+.hero-name {
+  font-family: Jua, sans-serif;
+  font-size: 3vw;
 }
 
 #about {
@@ -42,14 +66,24 @@ a {
   height: 100vh;
 }
 
+#about .row {
+  margin-bottom: 50px;
+}
+
 #hero {
   background-color: rgb(254, 252, 243);
   height: 100vh;
+  width: 100vw;
 }
 
 #contact {
   background-color: rgb(240, 219, 219);
   margin-top: 100px;
+}
+
+section {
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 /* projects */
@@ -63,47 +97,58 @@ a {
   height: 40px;
 }
 
-header {
-  position: absolute;
-  right: 300px;
-  top: 8px;
-  animation: left 2s forwards;
-}
-
 .hero-message {
   position: absolute;
-  width: 650px;
-  margin: 35vh auto;
+  top: 35%;
+  right: 50%;
   animation: right 2s forwards;
 }
 
 .hero-message p {
-  font-size: 2.5vw;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 2vw;
+  animation: right 2s forwards;
 }
 
 .nav-bar {
+  position: absolute;
+  right: 10%;
   display: flex;
-  list-style: none;
+  animation: left 2s forwards;
 }
 
 .nav-bar li {
   margin-left: 3rem;
 }
 
-/* .nav-bar li:first-child {
-  border: 1px black solid;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-} */
+.stack {
+  display: flex;
+  padding: 0;
+}
+
+.stack li {
+  padding: 0;
+  margin: 0 3px;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  background-color: rgb(209, 209, 209);
+  color: #fff;
+}
+
+.stack-tag li:last-child {
+  font-size: 0.7rem;
+}
 
 /* about */
 .profile {
   width: 280px;
   height: 280px;
-  margin: 0 100px 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3vh;
   border: 1px #fff solid;
   border-radius: 50%;
 }
@@ -114,29 +159,28 @@ header {
 }
 
 .about-me {
-  padding: 50px 0 100px 100px;
+  width: 25vw;
+  font-size: 1vw;
+  margin-left: 35%;
 }
 
 .about-me p {
   font-size: 1.5rem;
-
-  /* line-height: 2px; */
-}
-
-.self-intro {
-  margin-top: 10vh;
 }
 
 .learn-more {
   background-color: rgb(240, 219, 219);
   width: 120px;
   height: 50px;
+  margin-left: 35%;
   line-height: 50px;
   text-align: center;
   border-radius: 30px;
 }
 
 .learn-more p {
+  margin: 0;
+  color: rgb(254, 252, 243);
   font-size: 1rem;
 }
 
@@ -150,10 +194,10 @@ header {
 
 /* project */
 button {
-  background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) right;
+  background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(219, 163, 154) 50%) right;
   background-size: 200% 100%;
   font-family: Jua, sans-serif;
-  border: 1px #3c4048 solid;
+  border: 1px #171010 solid;
   border-radius: 3px;
   width: 80px;
   height: 20px;
@@ -164,51 +208,46 @@ button {
 button:hover {
   color: rgb(255, 255, 255);
   background-position: left;
+  border: 1px rgb(219, 163, 154) solid;
 }
 
 .project-intro {
   margin: auto 0;
+  margin-left: -12%;
 }
 
-.project-image {
-  padding-top: 5px;
-  padding-bottom: 10px;
+.project-image img {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .button-container {
+  margin-top: 50px;
   padding-left: 0;
 }
 
 /* contact */
 .center {
-  margin-left: calc(100% / 3);
+  margin-left: 42.5%;
 }
 
 #contact span {
   display: inline-block;
   margin-right: 30px;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
-.contact-linkedin {
-  font-size: 2rem;
-  color: #5f5f5f;
-}
-
-.contact-github {
-  font-size: 2rem;
-  color: #5f5f5f;
-}
-
+.contact-linkedin,
+.contact-github,
 .contact-email {
   font-size: 2rem;
-  color: #5f5f5f;
 }
 
 /* footer */
 .footer {
   width: 500px;
-  color: #fff;
+  color: rgb(254, 252, 243);
   margin-top: 20px;
   padding-bottom: 10px;
 }
