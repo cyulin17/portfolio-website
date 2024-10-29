@@ -18,130 +18,189 @@
 <body>
 
   <main>
-    <!-- nav bar section -->
+  <div class="content">
+<!-- Home Section -->
+    <section id="home-page">
+      <div class="nav">
+        <div class="logo">
+          <p>Chiayu Lin</br>web developer</p>
+        </div>
+        <div>
+          <ul class="nav-bar">
+            <li><a href="#home-page" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+          </ul>
+        </div>
+      </div>
 
-    <section id="nav">
-      <ul class="nav-bar">
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </section>
-
-    <!-- Hero section -->
-    <section id="hero">
-      <div class="hero-message">
-        <p>Hi! My name is <span class="hero-name">ChiaYu Lin</span>.<br>I am a Web Developer.</p>
+<!-- Hero section -->
+      <div class="hero-image">
+        <img src="./images/flower-field.jpg" alt="hualien-starbucks" class="slider-image active">
+        <img src="./images/griffith- observatory.jpg" alt="flower-field" class="slider-image">
+        <img src="./images/apple-picking-stone-soup-farm.jpg" alt="flower-field" class="slider-image">
+        <img src="./images/brunch-republique.jpg" alt="flower-field" class="slider-image">
+        <img src="./images/hualien-starbucks.jpg" alt="flower-field" class="slider-image">
       </div>
     </section>
-    <!-- about -->
+
+
     <section id="about">
-      <div class="row large-font">
-        <h1>ABOUT ME</h1>
-      </div>
-      <div class="row">
-        <img src="./images/profile-picture.png" alt="" class="profile">
-      </div>
-      <div class="row">
+      <!-- <div class="profile-picture">
+        <img src="./images/profile-picture.png" alt="">
+      </div> -->
         <div class="about-me">
-          Hi, There! I'm ChiaYu, a Web Developer based in Southern California. I love learning both human and
-          computer languages. I speak Mandarin, English, and Japanese. I know JavaScript, React, HTML, CSS, and more! I
-          like
-          traveling, foodie and Disney.
+          </strong>
+          <p>
+          Hello! I'm <strong>Chiayu Lin</strong>, a web developer and blogger from sunny SoCal. I love
+          bringing ideas to life, whether it’s a website or a dynamic app. Fluent in <strong>Mandarin(中文)</strong> , <strong>English</strong>, and <strong>Japanese(日本語)</strong>,
+          I bring a global perspective to each project, aiming to craft designs that connect with everyone.
+          </p>
+          <p>
+          When I'm not coding, you'll probably find me dancing to J-pop/K-pop, traveling, or hunting down new food spots. From
+          building custom WordPress themes to creating interactive tools, I’m all about design, detail, and making sure every user
+          experience is smooth.
+          </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="learn-more">
-          <a href="https://drive.google.com/file/d/1SU07D9hEi51JY9B78we4IBUtpZglGyZH/view?usp=sharing" target="_blank"
-            rel="noopener noreferrer">
-            <p><span>LEARN MORE</span></p>
-          </a>
-        </div>
-      </div>
     </section>
-    <!-- Projects -->
-    <section id="projects">
-      <div class="row large-font">
-        <h1>PROJECTS</h1>
-      </div>
-      <div class="row">
-        <div class="column-two-third">
+
+
+
+
+<!-- works -->
+    <section id="works">
+      <!-- Blog -->
+     <div class="row">
           <div class="project-image">
-            <a href="https://cyulin17.github.io/boba-finder/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/boba-finder-cover.jpg" alt="boba-finder">
+            <a href="https://chiayulin.com/" target="_blank" rel="noopener noreferrer">
+              <img src="./images/blog-cover-yuchocolatier.jpg" alt="chiayu's blog">
             </a>
           </div>
-        </div>
-        <div class="column-one-third project-intro">
-          <h3>Boba Finder</h3>
-          <p>Boba-finder helps users to locate a nearby boba tea shop using a zip code. It integrated Google Map APIs
-            to provide
-            users with the latest store information, photos, and reviews.
+        <div class="project-intro">
+          <h3>
+            <a href="https://chiayulin.com/" target="_blank" rel="noopener noreferrer">
+              Blog
+              <span class="open-link-icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
+            </a>
+          </h3>
+          <p>
+            Custom <strong>WordPress</strong> Theme: Built a unique theme from scratch, emphasizing <strong>mobile-first design</strong>, <strong>responsive layouts</strong>, and SEO.
+            Used HTML, CSS, JavaScript, and PHP for optimal performance and accessibility.
           </p>
           <ul class="stack">
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+     </div>
+     <!-- Tetra Tech -->
+    <div class="row">
+      <div class="project-image">
+        <a href="https://www.tetratech.com/" target="_blank" rel="noopener noreferrer">
+          <img src="./images/tetra-tech-cover.png" alt="Tetra Tech">
+        </a>
+      </div>
+      <div class="project-intro">
+        <h3>
+          <a href="https://www.tetratech.com/" target="_blank" rel="noopener noreferrer">
+            Tetra Tech
+            <span class="open-link-icon">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </h3>
+        <p>
+          Ensured website functionality and consistency through rigorous quality testing, aligned with <strong>SEO</strong> and WCAG standards, to
+          improve user experience.
+        </p>
+        <ul class="stack">
+          <li>Wordpress</li>
+          <li>Elementor</li>
+          <li>CSS</li>
+          <li>SEO</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Boba Finder -->
+    <div class="row">
+      <div class="project-image">
+        <a href="https://cyulin17.github.io/boba-finder/" target="_blank" rel="noopener noreferrer">
+          <img src="./images/boba-finder-cover.jpg" alt="Tetra Tech">
+        </a>
+      </div>
+      <div class="project-intro">
+        <h3>
+          <a href="https://cyulin17.github.io/boba-finder/" target="_blank" rel="noopener noreferrer">
+            Boba Finder
+            <span class="open-link-icon">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </h3>
+        <p>
+          A location-based app that helps users discover boba tea shops via zip code, integrating <strong>Google Maps API</strong> for real-time information, photos, and reviews.
+        </p>
+        <ul class="stack">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>AJAX</li>
-          </ul>
-          <div class="row button-container">
-            <button onclick="window.open('https://cyulin17.github.io/boba-finder/','_blank')"
-              type="button">LIVE</button>
-            <button onclick="window.open('https://github.com/cyulin17/boba-finder', '_blank')"
-              type="button">GitHub</button>
-          </div>
-        </div>
+        </ul>
       </div>
-      <div class="row line"></div>
-      <div class="row">
-        <div class="column-two-third">
-          <div class="project-image">
-            <a href="https://go-to-japan.chiayulin.com/" target="_blank" rel="noopener noreferrer">
-              <img src="./images/go-to-japan-cover.jpeg" alt="go-to-japan">
-            </a>
-          </div>
-        </div>
-        <div class="column-one-third project-intro">
-          <h3>Go TO JAPAN</h3>
-          <p>Go-to-japan is a travel itinerary planner for travelers who want to plan their trip to Japan. Users can
-            search based on
-            area, category, or keywords to find their destinations or activities and add or edit their itinerary from
-            a dynamic map.
-          </p>
-          <ul class="stack">
+    </div>
+
+    <div class="row last-work-item">
+      <div class="project-image no-border-top">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src="./images/go-to-japan-cover.jpeg" alt="Tetra Tech">
+        </a>
+      </div>
+      <div class="project-intro">
+        <h3>
+          <a href="https://go-to-japan.onrender.com/" target="_blank" rel="noopener noreferrer">
+            Go TO JAPAN
+            <span class="open-link-icon">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </h3>
+        <p>
+          A travel itinerary planner for Japan-bound travelers. Users can search destinations by area, category, or keywords, and
+          customize their itinerary on an interactive map.
+        </p>
+        <ul class="stack">
             <li>React.js</li>
-            <li>CSS</li>
             <li>JavaScript</li>
             <li>Node.js</li>
             <li>PostgreSQL</li>
-          </ul>
-          <div class="row button-container">
-            <button onclick="window.open('https://go-to-japan.onrender.com/', '_blank')" type="button">LIVE</button>
-            <button onclick="window.open('https://github.com/cyulin17/go-to-japan', '_blank') "
-              type="button">GitHub</button>
-          </div>
-        </div>
+        </ul>
       </div>
-    </section>
-    <!-- Contact and footer -->
-    <section id="contact">
-      <div class="row center">
-        <h1>LET'S CONNECT</h1>
-      </div>
-      <div class="row center">
-        <span class="contact-info"><a href="https://www.linkedin.com/in/chiayu-lin17/" target="_blank"
-            rel="noopener noreferrer"><i class="fa-brands fa-linkedin contact-linkedin"></i></a></span>
-        <span class="contact-info"><a href="https://github.com/cyulin17" target="_blank" rel="noopener noreferrer"><i
-              class="fa-brands fa-github contact-github"></i></a></span>
-        <span class="contact-info"><a href="mailto:lin.1008@osu.edu" target="_blank" rel="noopener noreferrer"><i
-              class="fa-solid fa-envelope contact-email"></i></a></span>
-      </div>
-      <footer class="row center footer">
-        <div><i class="fa-regular fa-copyright"></i>&nbsp; 2023 ChiaYu Lin</div>
-      </footer>
-    </section>
-  </main>
+    </div>
+
+</section>
+
+</main>
+
+    <!-- Contact me sidebar -->
+    <div class="social-media-sidebar">
+      <a href="https://www.linkedin.com/in/chiayu-lin17/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/cyulin17" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:cylin417@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+  <footer class="row center footer">
+    <div><i class="fa-regular fa-copyright"></i>&nbsp; 2024 ChiaYu Lin</div>
+  </footer>
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

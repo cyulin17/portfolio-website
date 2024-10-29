@@ -1,39 +1,48 @@
-.row {
-  display: flex;
-}
-
-.column {
-  display: inline-block;
-}
-
-.column-two-third {
-  width: 66%;
-}
-
-.column-one-third {
-  width: calc(100% / 3);
-}
-
 @media screen and (max-width: 800px) {
   .row {
     display: block;
-    padding: 0;
+    padding: 25px;
     margin: 0 auto;
   }
 
-  .column-one-third,
-  .column-two-third {
-    width: 100%;
+  .nav {
+    display: block;
   }
 
-  .project-image img {
-    width: 100%;
+  .nav-bar {
+      position: fixed;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      z-index: 100;
+  }
+
+  .nav .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image {
+    right: 0;
+    height: 400px;
+  }
+
+  .hero-image img {
+    height: 100%;
+  }
+
+  .slider-image {
+    padding-right: 0;
+    height: 100%;
   }
 
   .about-me,
-  .learn-more,
-  .footer,
-  #hero {
+  .footer
+  {
     margin: 0;
     padding: 0;
   }
@@ -43,72 +52,19 @@
     font-size: 1rem;
   }
 
-  .hero-message {
-    width: 100vw;
-    margin-left: 0;
-    margin-right: 0;
+  .project-image {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: none;
   }
 
-  .project-intro,
-  #contact,
-  .project-image img {
-    margin: 0;
-  }
-
-  section {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  #projects {
-    height: 1500px;
-    margin-top: 135px;
-  }
-
-  #nav {
-    padding: 0;
-  }
-
-  .nav-bar {
-    animation: none;
-  }
-
-  .nav-bar li {
-    margin-left: 1rem;
-  }
-
-  .hero-name {
-    font-size: 7vw;
-  }
-
-  .hero-message p {
-    font-size: 6vw;
-    padding-left: 15%;
-  }
-
-  #contact {
-    padding-top: 2px;
-    text-align: center;
-  }
 
   .footer {
     width: 100%;
   }
 
-  #contact span {
-    margin: 0 10px 10px;
-  }
 
-  #contact h1 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-
-  .stack {
-    flex-wrap: wrap;
-  }
-
-  .stack li {
-    margin-top: 3px;
-  }
 }
